@@ -28,14 +28,14 @@ public class Recursion0
  	 
  	public static void printNum (int n) 
  	{ 
-		if ( n < 0)
+		if ( n < 0) //checks for invalid user input --> avoids infinite loop if user enters a negative number
 		{
 			System.out.println("Please enter a positive integer");
 		}
 		
 
 
- 		else if (n == 0) 
+ 		else if (n == 0) //terminating case
  		{ 
  			System.out.println(n); 
  		} 
@@ -43,7 +43,7 @@ public class Recursion0
 		else 
  		{ 
  			System.out.println(n); 
- 			printNum(n-1); 
+ 			printNum(n-1); //call the same function with one less than the current number
  		} 
  		 
 	 
